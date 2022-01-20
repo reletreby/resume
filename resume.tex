@@ -13,6 +13,7 @@
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
+\usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -90,6 +91,14 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingSmall}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}\vspace{-12pt}
+}
+
+
 
 \newcommand{\resumeSubheadingInfo}[5]{
   \vspace{-2pt}\item
@@ -139,24 +148,18 @@
 \begin{center}
     \textbf{\Huge \scshape Rashad Eletreby} \\ \vspace{1pt}
     \small 650-714-2627 $|$ \href{mailto:eletreby.rashad@gmail.com}{\underline{eletreby.rashad@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/reletreby}{\underline{https://www.linkedin.com/in/reletreby}} $|$
-    \href{https://github.com/reletreby}{\underline{https://github.com/reletreby}}
+    \href{https://www.linkedin.com/in/reletreby}{\underline{https://www.linkedin.com/in/reletreby}} 
+    \\ \vspace{1mm}
+    \small H-1B Status $|$ Pending I-485
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheadingInfo
+    \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
       {PhD in Electrical and Computer Engineering}{Aug. 2015 -- Sep. 2019}
-      {Awards:}
-      \resumeItemListStart
-            \resumeItem{Philip and Marsha Dowd Fellowship}
-            \resumeItem{CMU Presidential Fellowship}
-            \resumeItem{William J. Happel Fellowship}
-            \resumeItem{Carnegie Institute of Technology Fellowship}
- \resumeItemListEnd
       
      \vspace{1mm}
     \resumeSubheading
@@ -177,12 +180,13 @@
 
 %\vspace{0.0001mm}
 %-----------PROGRAMMING SKILLS-----------
+\vspace{1mm}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Coding}{: Python, C++, Hive, Spark} \\
+     \textbf{Coding}{: Python, C++, Hive, SQL} \\
      \textbf{Developer Tools}{: Git, Jupyter, Google Cloud Platform, VS Code, PyCharm, IntelliJ} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, scikit-learn, igraph, networkx, joblib, requests, SciPy, Keras}
+     \textbf{Libraries}{: xgboost, PySpark, pandas, Keras, tensorflow, NumPy, Matplotlib, scikit-learn, igraph, networkx, joblib, requests, SciPy}
     }}
  \end{itemize}
  
@@ -191,11 +195,44 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior Data Scientist}{October 2019 -- Present}
+      {Staff Data Scientist}{December 2020 -- Present}
       {Walmart Inc.}{Hoboken, NJ}
       \resumeItemListStart
-        \resumeItem{{\bf Learning to Rank:} Analyzing and processing complex data sets using advanced querying, visualization and analytics tools. Automating data scraping, feature engineering, and feature selection for machine learning models. Full stack design of advanced machine learning models in the context of learning to rank to improve the relevance and conversion of search and browse results}
-        \resumeItem{{\bf Experimentation:} Developing a suite of comprehensive offline testing tools that enable faster development iterations. Running and analyzing customer facing experiments through interleaving and A/B testing}
+      \resumeItem{{\bf Search Listing Diversity:} Designing algorithms based on image understanding to increase the diversity of search results and decrease duplicate listings at Walmart.com.}
+
+        \resumeItem{{\bf Learning to Rank:} 
+         \begin{itemize}
+         \item Full stack design of advanced machine learning models in the context of learning to rank to improve the relevance and conversion of search and browse results.
+        \item Developed the first Learning to Rank (LETOR) framework for baseline ranking layer that serves all of Walmart.com browse shelves. The developed framework led to 0.37\% GMV lift. The project drove an additional \$XxM in revenue.
+        \item Designed the first multi-objective LETOR framework to empower a unified search experience in support of Walmart OneApp launch. The Designed model achieved relevance improvements of 15\%.
+        \item Created a LETOR framework that serves all of Walmart.com browse shelves. The rerank model induced by this framework led to 0.9\% GMV lift and 2\% discoverability lift. The project drove an additional \$XxM in revenue.
+   \end{itemize}
+    }
+        \resumeItem{{\bf Experimentation:}
+        \begin{itemize}
+        \item Created a powerful offline tool that measures the performance of a feature in terms of GMV coverage. The tool played a crucial role in many business decisions across multiple teams whenever an online A/B test was not possible
+        \item Running and analyzing customer facing experiments through interleaving and A/B testing.
+	\end{itemize}
+	}
+      \resumeItemListEnd
+      
+      \vspace{1mm}
+       \resumeSubheading
+      {Senior Data Scientist}{October 2019 -- December 2020}
+      {Walmart Inc.}{Hoboken, NJ}
+      \resumeItemListStart
+        \resumeItem{{\bf Learning to Rank:} 
+       \begin{itemize}
+        \item Developed a LETOR framework that serves all of Walmart.com browse shelves. The new model improved relevance by 5\% and increased Ads revenue by 6.3\%.
+        \item Improved key features used within the LETOR framework that servers all search queries at Walmart.com. The ranking model trained on the improved features yielded 12\% improvements with respect to item discoverability.
+           \item Implemented fundamental algorithmic changes to the LETOR framework at Walmart to alleviate presentation bias and accurately model customer engagement. The ranking model induced by these changes led to 0.60\% GMV lift and 5\% latency improvement. The project drove an additional \$XxM in revenue.
+        \end{itemize}
+    }
+        \resumeItem{{\bf Experimentation:}}
+        \begin{itemize}
+        \item Implemented key enhancements to an offline tool that simulates online interleaving tests. The enhancements provided several key insights that aided in the decision making of many features.
+        \item Developed an offline tool that examines A/B and interleaving test data and provides insights on the key segments for which the treatment performed poorly as compared to the control. The tool has been utilized by several members in the organization and is considered as a starting point for Root Cause Analysis (RCA).
+        	\end{itemize}
       \resumeItemListEnd
       
 
@@ -245,10 +282,28 @@ Proposed methods for automatic community detection on social network subgraphs u
           
           
     \resumeSubHeadingListEnd
+    
+   
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeItemListStart
+ \resumeItem{Neural Networks and Deep Learning - Coursera}
+  \resumeItem{Improving Deep Neural Networks: Hyper-parameter Tuning, Regularization, and Optimization - Coursera}
+  \resumeItemListEnd
 
 
+\section{Honors and Awards}
+  \resumeSubHeadingListStart
+  \resumeSubheadingSmall{$\bullet$ Philip and Marsha Dowd Fellowship, Carnegie Mellon University}{August 2017 - May 2018}
+  \resumeSubheadingSmall{$\bullet$ CMU Presidential Fellowship, Carnegie Mellon University}{August 2017 - May 2018}
+  \resumeSubheadingSmall{$\bullet$ William J. Happel Fellowship, Carnegie Mellon University}{August 2015 - July 2016}
+  \resumeSubheadingSmall{$\bullet$ Carnegie Institute of Technology Fellowship, Carnegie Mellon University}{August 2015 - July 2016}
+    \resumeSubHeadingListEnd
 \section{Patents}
 \resumeItemListStart
+
+
+\resumeItemInfo{(P3)}{\textbf{R. Eletreby}, C. Mu, Z. Wang and R. Mukherjee \textit{``Systems and Methods for Improving eCommerce Search Ranking Via Labelling Enhancements in LETOR”} - patent pending}
 \resumeItemInfo{(P2)}{\textbf{R. Eletreby}, D. Zhang, S. Kumar and O. Ya\u{g}an \textit{``Empowering Low-Power Wide Area Networks in Urban Settings”} - patent pending}
 \resumeItemInfo{(P1)}{M. Krunz, B. Akgun, P. Siyari, H. Rahbari, \textbf{R. Eletreby}, and O. Koyluoglu \textit{``Systems and methods for securing wireless communications"} - patent granted by USPTO}
 \resumeItemListEnd
@@ -264,7 +319,7 @@ Proposed methods for automatic community detection on social network subgraphs u
 \subsubsection*{\quad \large Journal Papers}
 
 \resumeItemListStart
-\resumeItemInfo{(J6)}{\textbf{R. Eletreby} and O. Ya\u{g}an \textit{``Secure Connectivity of Heterogeneous Wireless Sensor Networks Under a Heterogeneous On-Off Channel Model"} - IEEE Transactions on Information Theory (submitted)}
+\resumeItemInfo{(J6)}{\textbf{R. Eletreby} and O. Ya\u{g}an \textit{``Secure Connectivity of Heterogeneous Wireless Sensor Networks Under a Heterogeneous On-Off Channel Model"} - IEEE Transactions on Control of Network Systems (submitted)}
 
 \resumeItemInfo{(J5)}{\textbf{R. Eletreby}, Y. Zhuang, K. M. Carley, O. Ya\u{g}an, and H.  Vincent Poor \textit{``The Effects of Evolutionary Adaptations on Spreading Processes in Complex Networks"} - Proceedings of the National Academy of Sciences (March 2020)}
 
@@ -285,6 +340,13 @@ Proposed methods for automatic community detection on social network subgraphs u
 
 \subsubsection*{\quad \large Conference Papers}
 \resumeItemListStart
+\resumeItemInfo{(C15)}{A.Sridhar, O.Ya\u{g}an, \textbf{R.Eletreby}, S.Levin, J.B.Plotkin, and H.V. Poor \textit{``Leveraging A Multiple-Strain Model with Mutations in Analyzing the Spread of Covid-19"} - IEEE ICASSP 2021}
+
+
+\resumeItemInfo{(C14)}{O.Ya\u{g}an, A.Sridhar, \textbf{R.Eletreby}, S.Levin, J.B.Plotkin, and H.V.Poor \textit{``Modeling and Analysis of the Spread of COVID-19 under a Multiple-strain Model with Mutations"} - HDSR 2021}
+
+\resumeItemInfo{(C13)}{M.Sood, A.Sridhar, \textbf{R.Eletreby}, C.W.Wu, H.V.Poor, and O.Ya\u{g}an \textit{``Epidemic Spreading of Mutating Contagions over Multi-Layer Contact Networks"} - NetSci 2021}
+
 \resumeItemInfo{(C12)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``On the Connectivity of Inhomogeneous Random $K$-out Graphs"} - IEEE ISIT 2019}
 
 \resumeItemInfo{(C11)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Connectivity of Wireless Sensor Networks Secured by the Heterogeneous Random Pairwise Key Predistribution Scheme"} - IEEE CDC 2018}
