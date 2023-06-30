@@ -15,7 +15,7 @@
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[bookmarks=false, colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -47,7 +47,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-0.3in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{0.6in}
 
 \urlstyle{same}
 
@@ -139,12 +139,6 @@
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Rashad Eletreby} \\ \vspace{1pt}
     \small 650-714-2627 $|$ \href{mailto:eletreby.rashad@gmail.com}{\underline{eletreby.rashad@gmail.com}} $|$ 
@@ -166,40 +160,32 @@
       {Carnegie Mellon University}{Pittsburgh, PA}
       {MS in Electrical and Computer Engineering}{Aug. 2015 -- Sep. 2019}
       
-       \vspace{1mm}
-    \resumeSubheading
-      {Cairo University}{Cairo, Egypt}
-      {MS in Electrical and Computer Engineering}{Sep. 2012 -- July 2014}
-      
-      \vspace{1mm}
-    \resumeSubheading
-      {Cairo University}{Cairo, Egypt}
-      {BS in Electrical and Computer Engineering}{Sep. 2007 -- July 2012}
   \resumeSubHeadingListEnd
 
 
-%\vspace{0.0001mm}
 %-----------PROGRAMMING SKILLS-----------
-%
-%\vspace{1mm}
-%\section{Technical Skills}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%    \small{\item{
-%     \textbf{Coding}{: Python, C++, Hive, SQL} \\
-%     \textbf{Developer Tools}{: Git, Jupyter, Google Cloud Platform, Amazon AWS, VS Code, PyCharm, IntelliJ} \\
-%     \textbf{Libraries}{: xgboost, PySpark, pandas, tensorflow, NumPy, Matplotlib, scikit-learn, igraph, networkx, joblib, requests, SciPy}
-%    }}
-% \end{itemize}
+
+\vspace{1mm}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Coding}{: Python, Hive, SQL} \\
+     \textbf{Developer Tools}{: Git, Jupyter, Google Cloud Platform, Amazon AWS, VS Code, PyCharm, IntelliJ} \\
+     \textbf{Libraries}{: fastapi, sagemaker, openai, cohere, farm-haystack, langchain, llama-index, xgboost, pyspark, pandas, tensorflow, numpy, scikit-learn, igraph, networkx, scipy}
+    }}
+ \end{itemize}
+
  
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
       {Principal Data Scientist}{August 2022 -- Present}
-      {Rocket Travel, Inc.}{Burlington, NJ}
+      {Rocket Travel by Agoda}{New York City, NY}
       \resumeItemListStart
- \resumeItem{{\bf Learning to Rank:} Leading a team of two data scientists designing advanced Learning to Rank models in the context of {\em hotel} ranking. Ranking models developed by the team are serving a multitude of partners by means of white-labeling.}
- \resumeItem{{\bf Translation:} Utilizing state-of-the-art neural translation models to perform real-time translation of hotel static information from English to any selected language.}
+      \resumeItem{Pioneering the use of OpenAI ChatGPT in creating a travel assistant for all B2B partner websites.}
+      \resumeItem{Leading the design of advanced hotel ranking models, resulting in a 3\% conversion lift across B2B partners.}
+      \resumeItem{Led a team in developing a Neural Translation model for room titles, reducing customer complaints by 23\% and increasing revenue by 2\%.}
   \resumeItemListEnd
   
   \vspace{1mm}
@@ -207,30 +193,18 @@
       {Senior Manager I, Data Science}{January 2022 -- August 2022}
       {Walmart, Inc.}{Hoboken, NJ}
       \resumeItemListStart
- \resumeItem{{\bf Learning to Rank:} Led a team of three data scientists developing various aspects of Learning to Rank pipeline, namely, feature engineering, model design/training, and model deployment. Ranking models developed by the team served $\sim 50$\% of Walmart.com traffic on both web/app platforms.}
+      \resumeItem{Led a team in building a Learning to Rank (LETOR) pipeline, catering to half of Walmart.com's web and app traffic.}
   \resumeItemListEnd
-
 
  	\vspace{1mm}
     \resumeSubheading
       {Staff Data Scientist}{December 2020 -- January 2022}
       {Walmart, Inc.}{Hoboken, NJ}
       \resumeItemListStart
-      \resumeItem{{\bf Search Listing Diversity:} Designing algorithms based on image understanding to increase the diversity of search results and decrease duplicate listings at Walmart.com.}
-
-        \resumeItem{{\bf Learning to Rank:} 
-         \begin{itemize}
-        \item Developed the first Learning to Rank (LETOR) framework for baseline ranking layer that serves all of Walmart.com browse shelves. The developed framework led to 0.37\% GMV lift. The project drove an additional \$XxM in revenue.
-        \item Designed the first multi-objective LETOR framework to empower a unified search experience in support of Walmart OneApp launch. The Designed model achieved relevance improvements of 15\%.
-        \item Created a LETOR framework that serves all of Walmart.com browse shelves. The rerank model induced by this framework led to 0.9\% GMV lift and 2\% discoverability lift. The project drove an additional \$XxM in revenue.
-   \end{itemize}
-    }
-        \resumeItem{{\bf Experimentation:}
-        \begin{itemize}
-        \item Created a powerful offline tool that measures the performance of a feature in terms of GMV coverage. The tool played a crucial role in many business decisions across multiple teams whenever an online A/B test was not possible
-        \item Running and analyzing customer facing experiments through interleaving and A/B testing.
-	\end{itemize}
-	}
+      \resumeItem{Implemented algorithms (based on image understanding) to diversify search results and minimize duplicate listings on Walmart.com.}
+      \resumeItem{Built a LETOR framework for Walmart.com online browse shelves, increasing Gross Merchandise Value (GMV) by 1.2\%, enhancing product discoverability by 2\%, and increasing Ads revenue by 6.3\%. The project drove an additional \$XxM in revenue.}
+      \resumeItem{Designed the first multi-objective LETOR framework to empower a unified search experience in support of Walmart OneApp launch. The Designed model achieved relevance improvements of 15\%.}
+      \resumeItem{Developed a suite of critical offline tools for feature performance measurement and ran customer-facing experiments via interleaving and A/B testing.}
       \resumeItemListEnd
       
       \vspace{2mm}
@@ -238,88 +212,27 @@
       {Senior Data Scientist}{October 2019 -- December 2020}
       {Walmart, Inc.}{Hoboken, NJ}
       \resumeItemListStart
-        \resumeItem{{\bf Learning to Rank:} 
-       \begin{itemize}
-        \item Developed a LETOR framework that serves all of Walmart.com browse shelves. The new model improved relevance by 5\% and increased Ads revenue by 6.3\%.
-        \item Improved key features used within the LETOR framework that servers all search queries at Walmart.com. The ranking model trained on the improved features yielded 12\% improvements with respect to item discoverability.
-           \item Implemented fundamental algorithmic changes to the LETOR framework at Walmart to alleviate presentation bias and accurately model customer engagement. The ranking model induced by these changes led to 0.60\% GMV lift and 5\% latency improvement. The project drove an additional \$XxM in revenue.
-        \end{itemize}
-    }
-        \resumeItem{{\bf Experimentation:}}
-        \begin{itemize}
-        \item Implemented key enhancements to an offline tool that simulates online interleaving tests. The enhancements provided several key insights that aided in the decision making of many features.
-        \item Developed an offline tool that examines A/B and interleaving test data and provides insights on the key segments for which the treatment performed poorly as compared to the control. The tool has been utilized by several members in the organization and is considered as a starting point for Root Cause Analysis (RCA).
-        	\end{itemize}
+        \resumeItem{Improved the ML features used within Walmart search LETOR framework, leading to a 12\% boost in item discoverability.}
+        \resumeItem{Implemented algorithmic changes to Walmart search LETOR framework, resulting in a 0.60\% GMV lift and a 5\% latency improvement.}
       \resumeItemListEnd
       
-
 
     \resumeSubheading
       {Research Assistant}{Aug. 2015 -- Sep. 2019}
       {Carnegie Mellon University}{Pittsburgh, PA}
       \resumeItemListStart
-      \resumeItem{{\bf Discovering Social Circles}: 
-Proposed methods for automatic community detection on social network subgraphs under the {\em social circle analysis} category. The proposed methods combine structural information (graph connectivity) and content information (traits pertaining to each node in the network) to determine communities within social network graphs}
-        \resumeItem{{\bf Random Graph Theory}: Proposed novel random graph models that capture the secure connectivity of large-scale, heterogeneous wireless sensor networks. Analyzed the absence of isolated nodes, connectivity, minimum node degree, and $k$-connectivity of the proposed graphs by means of rigorous mathematical proofs and computer simulations}
-        \resumeItem{{\bf Network Science}: Proposed and analyzed mathematical and simulation models that characterize the role of evolutionary adaptations in facilitating the spread of information and infectious diseases in real-world complex networks}
-        \resumeItem{{\bf Internet of Things}: Worked on the design, evaluation, and implementation of novel techniques that aim to i) disentangle and decode large numbers of interfering LP-WAN transmissions at a simple, single-antenna LP-WAN base station, and ii) extend the transmission range of the current LP-WAN sensors}
+      \resumeItem{Proposed and analyzed mathematical and simulation models to understand the spread of information and diseases in real-world complex networks (\bf{PNAS}).}
+        \resumeItem{Proposed and analyzed novel random graph models that capture the secure connectivity of large-scale, heterogeneous wireless sensor networks (\bf{IEEE Trans. on Info. Theory}).}
+        \resumeItem{Developed techniques for decoding collisions and extending transmission range in LP-WAN transmissions (\bf{ACM SIGCOMM}).}
+         \resumeItem{Devised methods for community detection on social network subgraphs, incorporating both structural and content information.}
     \resumeItemListEnd
-    
-
-\resumeSubheading
-      {Research Assistant}{Aug. 2014 -- May 2015}
-      {University of Arizona}{Tucson, AZ}
-      \resumeItemListStart
-      \resumeItem{{\bf Physical-layer security}: Conducted research on physical layer security in multi-link wireless networks using artificial noise techniques}
-    \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
-
-%    %-----------GRADUATE COURSES-----------
-%    \section{Graduate Courses}
-%    \resumeSubHeadingListStart
-%      \resumeProjectHeading
-%          {\textbf{Carnegie Mellon University} (GPA: 4.0)}{}
-%          \resumeItemListStart
-%            \resumeItemNull{Introduction to Machine Learning (PhD), Applied Stochastic Processes, Estimation and Detection, Wireless Communications, Game Theory}
-%          \resumeItemListEnd
-%                    
-%          \resumeProjectHeading
-%          {\textbf{University of Arizona} (GPA: 4.0)}{}
-%          \resumeItemListStart
-%            \resumeItemNull{Computer System and Network Evaluation, Advanced Topics in Computer Networks, Theory of Graphs and Networks}
-%          \resumeItemListEnd
-%                    
-%               \resumeProjectHeading
-%          {\textbf{Cairo University} (GPA: 4.0)}{}
-%          \resumeItemListStart
-%            \resumeItemNull{Optimization Methods, Advanced Mathematics, Linear/Non-Linear Control Systems}
-%          \resumeItemListEnd
-%          
-%          
-%    \resumeSubHeadingListEnd
-    
-   
-%-----------CERTIFICATIONS-----------
-%\section{Certifications}
-%\resumeItemListStart
-% \resumeItem{Neural Networks and Deep Learning - Coursera}
-%  \resumeItem{Improving Deep Neural Networks: Hyper-parameter Tuning, Regularization, and Optimization - Coursera}
-%  \resumeItemListEnd
-
+  
 
 \section{Honors and Awards}
-{\renewcommand{\arraystretch}{-3}
-  \resumeSubHeadingListStart
-  \resumeSubheadingSmall{$\bullet$ {\em Making the Difference Award}, Walmart}{February 2021}
-  \resumeSubheadingSmall{$\bullet$ {\em Philip and Marsha Dowd Fellowship}, Carnegie Mellon University}{August 2017 - May 2018}
-  \resumeSubheadingSmall{$\bullet$ {\em CMU Presidential Fellowship}, Carnegie Mellon University}{August 2017 - May 2018}
-  \resumeSubheadingSmall{$\bullet$ {\em William J. Happel Fellowship}, Carnegie Mellon University}{August 2015 - July 2016}
-  \resumeSubheadingSmall{$\bullet$ {\em Carnegie Institute of Technology Fellowship}, Carnegie Mellon University}{August 2015 - July 2016}
-    \resumeSubHeadingListEnd
-  }
-
+Received multiple awards for excellence including the {\em Making the Difference Award}, Walmart (2021), {\em Philip and Marsha Dowd Fellowship}, Carnegie Mellon University (2017-2018), and {\em CMU Presidential Fellowship}, Carnegie Mellon University (2017-2018).  
+    
 
 \section{Patents}
 \resumeItemListStart
@@ -330,37 +243,24 @@ Proposed methods for automatic community detection on social network subgraphs u
 \resumeItemListEnd
 
 
-\section{Publications}
-
-\subsubsection*{\quad \large Technical Reports}
-\resumeItemListStart
-\resumeItemInfo{(T1)}{\textbf{R. Eletreby} and  M. Blanco \textit{``Social Circle Analysis via Content and Structure Augmentation"} - Source code and report are available at: \url{https://github.com/reletreby/structureAug}}
-\resumeItemListEnd
-
-
-\vspace{-3mm}
+\section{Selected Publications}
+\vspace{3mm}
 \subsubsection*{\quad \large Journal Papers}
 
 \resumeItemListStart
-\resumeItemInfo{(J8)}{M.Sood, A.Sridhar, \textbf{R.Eletreby}, C.W.Wu, S.A.Levin, H.V.Poor, and O.Ya\u{g}an \textit{``Spreading Processes with Mutations over Multi-layer Networks"} - submitted}
-
-\resumeItemInfo{(J7)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Secure Connectivity of Heterogeneous Wireless Sensor Networks Under a Heterogeneous On-Off Channel Model"} - submitted}
+\resumeItemInfo{(J1)}{M.Sood, A.Sridhar, \textbf{R.Eletreby}, C.W.Wu, S.A.Levin, H.V.Poor, and O.Ya\u{g}an \textit{``Spreading processes with mutations over multilayer networks"} - Proceedings of the National Academy of Sciences (April 2023)}
 
 
-\resumeItemInfo{(J6)}{O.Ya\u{g}an, A.Sridhar, \textbf{R.Eletreby}, S.Levin, J.B.Plotkin, and H.V.Poor \textit{``Modeling and Analysis of the Spread of COVID-19 under a Multiple-strain Model with Mutations"} - Harvard Data Science Review (April 2021)}
+\resumeItemInfo{(J2)}{O.Ya\u{g}an, A.Sridhar, \textbf{R.Eletreby}, S.Levin, J.B.Plotkin, and H.V.Poor \textit{``Modeling and Analysis of the Spread of COVID-19 under a Multiple-strain Model with Mutations"} - Harvard Data Science Review (April 2021)}
 
-\resumeItemInfo{(J5)}{\textbf{R.Eletreby}, Y.Zhuang, K.M.Carley, O.Ya\u{g}an, and H.V.Poor \textit{``The Effects of Evolutionary Adaptations on Spreading Processes in Complex Networks"} - Proceedings of the National Academy of Sciences (March 2020)}
+\resumeItemInfo{(J3)}{\textbf{R.Eletreby}, Y.Zhuang, K.M.Carley, O.Ya\u{g}an, and H.V.Poor \textit{``The Effects of Evolutionary Adaptations on Spreading Processes in Complex Networks"} - Proceedings of the National Academy of Sciences (March 2020)}
 
 
 \resumeItemInfo{(J4)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Connectivity of Inhomogeneous Random K-out Graphs"} - IEEE Transactions on Information Theory (June 2020)}
 
 
-\resumeItemInfo{(J3)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``$k$-connectivity of Inhomogeneous Random Key Graphs with Unreliable Links"} - IEEE Transactions on Information Theory (January 2019)}
+\resumeItemInfo{(J5)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``$k$-connectivity of Inhomogeneous Random Key Graphs with Unreliable Links"} - IEEE Transactions on Information Theory (January 2019)}
 
-\resumeItemInfo{(J2)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Connectivity of Wireless Sensor Networks Secured by Heterogeneous Key Predistribution Under an On/Off Channel Model"} - IEEE Transactions on Control of Network Systems (February 2018)}
-
-
-\resumeItemInfo{(J1)}{\textbf{R.Eletreby}, H.Elsayed and M.Khairy \textit{``Optimal Spectrum Assignment for Cognitive Radio Sensor Networks Under Coverage Constraint"} - IET Communications Journal (December 2014)}
 
 \resumeItemListEnd
 
@@ -368,46 +268,22 @@ Proposed methods for automatic community detection on social network subgraphs u
 \vspace{-3mm}
 \subsubsection*{\quad \large Conference Papers}
 \resumeItemListStart
-\resumeItemInfo{(C14)}{A.Sridhar, O.Ya\u{g}an, \textbf{R.Eletreby}, S.Levin, J.B.Plotkin, and H.V.Poor \textit{``Leveraging A Multiple-Strain Model with Mutations in Analyzing the Spread of Covid-19"} - IEEE ICASSP 2021}
+\resumeItemInfo{(C1)}{A.Sridhar, O.Ya\u{g}an, \textbf{R.Eletreby}, S.Levin, J.B.Plotkin, and H.V.Poor \textit{``Leveraging A Multiple-Strain Model with Mutations in Analyzing the Spread of Covid-19"} - IEEE ICASSP 2021}
 
 
-\resumeItemInfo{(C13)}{M.Sood, A.Sridhar, \textbf{R.Eletreby}, C.W.Wu, H.V.Poor, and O.Ya\u{g}an \textit{``Epidemic Spreading of Mutating Contagions over Multi-Layer Contact Networks"} - NetSci 2021}
+\resumeItemInfo{(C2)}{M.Sood, A.Sridhar, \textbf{R.Eletreby}, C.W.Wu, H.V.Poor, and O.Ya\u{g}an \textit{``Epidemic Spreading of Mutating Contagions over Multi-Layer Contact Networks"} - NetSci 2021}
 
-\resumeItemInfo{(C12)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``On the Connectivity of Inhomogeneous Random $K$-out Graphs"} - IEEE ISIT 2019}
+\resumeItemInfo{(C3)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``On the Connectivity of Inhomogeneous Random $K$-out Graphs"} - IEEE ISIT 2019}
 
-\resumeItemInfo{(C11)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Connectivity of Wireless Sensor Networks Secured by the Heterogeneous Random Pairwise Key Predistribution Scheme"} - IEEE CDC 2018}
-
-
-\resumeItemInfo{(C10)}{\textbf{R.Eletreby}, Y.Zhuang and O.Ya\u{g}an \textit{``Evolution of Spreading Processes on Complex Networks"} - Conference on Complex Systems 2018}
+\resumeItemInfo{(C4)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Connectivity of Wireless Sensor Networks Secured by the Heterogeneous Random Pairwise Key Predistribution Scheme"} - IEEE CDC 2018}
 
 
-\resumeItemInfo{(C9)}{\textbf{R.Eletreby}, Y.Zhuang and O.Ya\u{g}an \textit{``Evolution of Spreading Processes on Complex Networks"} - IEEE ITA 2018 - Invited Abstract}
-
-
-\resumeItemInfo{(C8)}{\textbf{R.Eletreby}, D.Zhang, S.Kumar and O.Ya\u{g}an \textit{``Empowering Low-Power Wide Area Networks in Urban Settings"} - ACM SIGCOMM 2017}
-
-
-\resumeItemInfo{(C7)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Secure and Reliable Connectivity in Heterogeneous Wireless Sensor Networks"} - IEEE ISIT 2017}
-
-
-\resumeItemInfo{(C6)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Connectivity of Inhomogeneous Random Key Graphs Intersecting Inhomogeneous Erd\H{o}s-R\'enyi Graphs"} - IEEE ISIT 2017}
-
-
-\resumeItemInfo{(C5)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``On the network reliability problem of the heterogeneous key predistribution scheme"} - IEEE CDC 2016}
-
-
-\resumeItemInfo{(C4)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{``Node isolation of secure wireless sensor networks under a heterogeneous channel model"} - Allerton 2016}
-
-
-\resumeItemInfo{(C3)}{\textbf{R.Eletreby} and O.Ya\u{g}an \textit{`` Minimum Node Degree in Inhomogeneous Random Key Graphs With Unreliable Links"} - IEEE ISIT 2016}
-
-
-\resumeItemInfo{(C2)}{ \textbf{R.Eletreby}, H.Rahbari, M.Krunz \textit{``Supporting PHY-layer Security in Multi-link Wireless Networks Using Friendly Jamming"} - IEEE GLOBECOM 2015}
-
-
-\resumeItemInfo{(C1)}{\textbf{R.Eletreby}, H.Elsayed and M.Khairy \textit{``CogLEACH: A Spectrum-Aware Clustering Protocol for Cognitive Radio Sensor Networks"} - CROWNCOM 2014}
+\resumeItemInfo{(C5)}{\textbf{R.Eletreby}, D.Zhang, S.Kumar and O.Ya\u{g}an \textit{``Empowering Low-Power Wide Area Networks in Urban Settings"} - ACM SIGCOMM 2017}
 
 \resumeItemListEnd
+
+\vspace{5mm}
+\small{For a full list of publications, please visit my \href{https://scholar.google.com/citations?user=HC7ra8oAAAAJ&hl=en}{Google Scholar profile}.}
 
 
 
